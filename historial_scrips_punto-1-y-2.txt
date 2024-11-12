@@ -1,0 +1,116 @@
+    1  ls
+    2  cd webapp/
+    3  ls
+    4  openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -subj "/C=Col/ST=Valle del cauca/L=Cali/O=UAO/CN=localhost"
+    5  openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -subj "/C=Col/ST=Valle/L=Cali/O=UAO/CN=localhost"
+    6  openssl version
+    7  openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -subj "/C=CO/ST=Valle/L=Cali/O=UAO/CN=localhost"
+    8  ls
+    9  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   10  sudo apt-get update
+   11  sudo apt-get install ca-certificates curl
+   12  sudo install -m 0755 -d /etc/apt/keyrings
+   13  sudo mkdir -p /etc/apt/keyrings
+   14  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   15  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   16  sudo apt update
+   17  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   18  sudo apt-get update
+   19  sudo apt-get install ca-certificates curl
+   20  sudo install -m 0755 -d /etc/apt/keyrings
+   21  sudo mkdir -p /etc/apt/keyrings
+   22  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   23  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   24  clear
+   25  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   26  sudo apt-get update
+   27  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   28  sudo apt-get install ca-certificates curl
+   29  sudo install -m 0755 -d /etc/apt/keyrings
+   30  sudo mkdir -p /etc/apt/keyrings
+   31  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   32  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   33  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   34  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   35    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   36  sudo apt-get update
+   37  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   38  sudo usermod -aG docker $USER
+   39  sudo systemctl status docker
+   40  sudo docker search apache
+   41  docker pull httpd
+   42  sudo docker search apache
+   43  sudo docker pull httpd
+   44  vim ~/.vimrc
+   45  ls
+   46  vim ~/.vimrc
+   47  pwd
+   48  cd ..
+   49  ls
+   50  sudo touch Dockerfile && sudo touch docker-compose
+   51  sudo vim my-httpd-vhosts.conf
+   52  cd webapp/
+   53  cd ..
+   54  ls
+   55  sudo vim my-httpd-vhosts.conf
+   56  sudo nano my-httpd-vhosts.conf
+   57  pwd
+   58  cd webapp/
+   59  ls
+   60  sudo mv localhost.crt /home/vagrant/localhost.crt
+   61  ls
+   62  sudo mv localhost.key /home/vagrant/localhost.key
+   63  ls
+   64  cd ..
+   65  ls
+   66  cd my-httpd-vhosts.conf 
+   67  nano my-httpd-vhosts.conf 
+   68  nano /usr/local/apache2/conf/ssl/localhost.crt
+   69  cd webapp/
+   70  sudo nano application.wsgi
+   71  cd ..
+   72  nano Dockerfile 
+   73  sudo nano Dockerfile 
+   74  ls
+   75  sudo mv docker-compose docker-compose.yml
+   76  sudo nano docker-compose.yml 
+   77  sudo nano requirements.txt
+   78  tree
+   79  sudo apt install tree
+   80  tree
+   81  sudo apt update
+   82  sudo apt install apache2
+   83  cd /etc/apache2/sites-availables
+   84  cd /etc/apache2/sites-available/
+   85  ls
+   86  sudo nano 000-default.conf 
+   87  sudo systemctl restart apache2
+   88  cd
+   89  ls
+   90  sudo docker compose build
+   91  sudo docker images
+   92  sudo docker compose up
+   93  sudo docker --help
+   94  sudo docker container
+   95  sudo docker ps -a
+   96  sudo docker login
+   97  sudo docker ps
+   98  sudo docker ps -a
+   99  sudo docker run webapp_container
+  100  sudo docker images
+  101  sudo docker --help
+  102  sudo docker tag vagrant-web:tagname parcial_final:tagname
+  103  sudo docker images
+  104  sudo docker tag vagrant-web:tagname parcial_final:tagname
+  105  sudo docker images
+  106  sudo docker tag vagrant-web:latest gomezaf/parcial_final:tagname
+  107  sudo docker push gomezaf/parcial_final:tagname
+  108  exit
+  109  sudo docker ps
+  110  docker ps
+  111  docker compose up -d
+  112  exit
+  113  ls
+  114  sudo nano Dockerfile 
+  115  sudo nano docker-compose.yml 
+  116  history > historial_scrips_punto-1-y-2.txt
